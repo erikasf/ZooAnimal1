@@ -1,10 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<style>
+<body{
+  background: url("https://www.colourbox.com/preview/3426466-abstract-hand-drawing-background-seamless-pattern-with-waves-can-be-used-for-wallpaper-pattern-fills-web-page-background-surface-textures.jpg");
+}
+
+.nrp{
+  border:4 px double black;
+  background: black;
+  opacity: 0.8;
+ border-radius: 25px;
+  color: ivory;
+  text-shadow: 1px 2px 1px blue;
+  text-align: center;
+}
+h1{
+ 
+ 
+    font-family: 'Asset', cursive;
+}
+h2{
+  font-family: 'Asset', Cursive;
+}
+</style>
   <meta charset="UTF-8">
   <title>Document</title>
 </head>
 <body>
+<div class = "nrp">
   <h1>Catalog of Zoos!</h1>
   <% zoos.forEach(function(zoo){ %>
     <p>
@@ -12,5 +36,6 @@
     </p>
   <% })%>
   <a href="/zoos/new">Add a new one!</a>
+  </div>
 </body>
 </html>
