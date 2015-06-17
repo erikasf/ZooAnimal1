@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <form action="/zoos/<%= zoo.id%>/animals" method="POST">
+  <div>
+    <label for="species">Species</label>
+    <input autofocus  type="text" name="species" id="species">
+  </div>
+   <div>
+    <label for="img">Image</label>
+    <input autofocus  type="url" name="image" id="image">
+  </div>
+  <div>
+    <input type="submit" value="Add!">
+  </div>
+  </form>
+</body>
+</html>

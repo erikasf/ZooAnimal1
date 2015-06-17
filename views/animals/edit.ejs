@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Animals</h1>
+    <p>
+
+      <form action="/authors/<%= animal.zoo.id%>/animals/<%= animal._id%>?_method=put" method="POST">
+      <div>
+         <label for="species">Species:</label>
+         <input autofocus type="text" name="species" id="species" value="<%= animal.species%>">
+       </div>
+       <label for="age">Species:</label>
+         <input autofocus type="text" name="age" id="age" value="<%= animal.age%>">
+       </div>
+       <label for="img">Animal Image:</label>
+         <input autofocus type="url" name="img" id="img" value="<%= animal.img%>">
+       </div>
+       <div>
+         <input type="submit" value="Update">
+       </div>
+      </form>
+    </p>
+</body>
+</html>
